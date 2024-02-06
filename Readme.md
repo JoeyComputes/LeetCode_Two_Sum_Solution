@@ -1,4 +1,5 @@
 # Two Sum (Solution)
+
     # Given an array of intergers nums and an interger target
     # Return indexes of two numbers such that they add up to target
     # You may assue that each input would have exactly one Solution
@@ -6,19 +7,23 @@
     # You can return the answer in any order
 
 # Example 1
+
     #   Input: nums = [2,7,11,15], target = 9
     #   Output: [0,1]
     #   Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 
 # Example 2
+
     #   Input: nums = [3,2,4], target = 6
     #   Output: [1,2]
 
-# Example 3:
+# Example 3
+
     #   Input: nums = [3,3], target = 6
     #   Output: [0,1]
 
-# Constraints:
+# Constraints
+
     # 2 <= nums.length <= 104
     # -109 <= nums[i] <= 109
     # -109 <= target <= 109
@@ -38,7 +43,7 @@ class Solution:
                 # Spotted a pair that added up to the target number
                 # Shares the position of the index
                 return [num_indexes[complement], i]
-            # If complment is not found, remember the current number and its index position
+            # If complement is not found, remember the current number and its index position
             num_indexes[num] = i
 
         # If no valid pair is found then return an empty list
