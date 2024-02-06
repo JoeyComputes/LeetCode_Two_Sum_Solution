@@ -29,22 +29,4 @@
     # -109 <= target <= 109
     # Only one valid answer exists.
 
-class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        # Created a dictionary to remember the numbers and their location in the indexes
-        num_indexes = {}
-        # Repeats through the numbers along with the position in the indexes
-        for i, num in enumerate(nums):
-            # Calculate the complement needed to reach the target number
-            # Complement - numbers, when added to the element, achieve a target sum
-            complement = target - num
-            # Check if the complement has been remembered
-            if complement in num_indexes:
-                # Spotted a pair that added up to the target number
-                # Shares the position of the index
-                return [num_indexes[complement], i]
-            # If complement is not found, remember the current number and its index position
-            num_indexes[num] = i
-
-        # If no valid pair is found then return an empty list
-        return []
+# Feel free to read the text file for my solution to this problem with a Runtime of 76 ms.
