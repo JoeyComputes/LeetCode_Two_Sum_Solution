@@ -1,8 +1,8 @@
-# Two Sum (Solution)
+# Two Sum (Problem)
 
-    # Given an array of intergers nums and an interger target
-    # Return indexes of two numbers such that they add up to target
-    # You may assue that each input would have exactly one Solution
+    # Given an array of integers nums and an integer target
+    # Return indexes of two numbers such that they add up to the target
+    # You may assume that each input would have exactly one solution
     # You may not use the same element twice
     # You can return the answer in any order
 
